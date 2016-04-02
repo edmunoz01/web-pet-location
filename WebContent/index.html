@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>RESTfulABC</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="scripts/index.js"></script>
+</head>
+<body ng-app="PetLocationABC">
+	<h1>RESTful ABC</h1>
+	<p>Sistema de localización de mascotas...</p>
+	<div ng-controller="PruebaRESTController">
+		<h2>Prueba servicio REST</h2>
+		<input type="button" value="Invocar servicio"
+			ng-click="servicioPrueba()"> <br> <br>
+		<h2>Prueba servicio REST InformacionMascota {{1+1}}</h2>
+		<p>
+			Latitud: {{latitudRespuesta}}, Longitud: {{longitudRespuesta}}
+		</p>
+		<table>
+			<tr>
+				<td>Latitud</td>
+				<td><input type="test" ng-model="latitud" />
+				</td>
+			</tr>
+			<tr>
+				<td>Longitud</td>
+				<td><input type="test" ng-model="longitud" />
+				</td>
+			</tr>
+			<tr>
+				<td>idCollar</td>
+				<td><input type="test" ng-model="idCollar" />
+				</td>
+			</tr>
+			<tr>
+				<td>frecRespiratoria</td>
+				<td><input type="test" ng-model="frecRespiratoria" />
+				</td>
+			</tr>
+			<tr>
+				<td>frecCardiaca</td>
+				<td><input type="test" ng-model="frecCardiaca" />
+				</td>
+			</tr>
+		</table>
+		<br> <input type="button" value="Invocar servicio"
+			ng-click="enviarInformacion()">
+	</div>
+</body>
+</html>

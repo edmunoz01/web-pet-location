@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>RESTfulABC</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="scripts/cliente.js"></script>
+</head>
+<body ng-app="PetLocationABC">
+	<h1>Dueno de mascota ABC</h1>
+	<p>Pantalla para registro de cliente y recibir informacion</p>
+	<div ng-controller="ClienteRESTController">
+		<table>
+			<tr>
+				<td>Latitud</td>
+				<td><input type="text" ng-model="latitudMascota" />
+				</td>
+			</tr>
+			<tr>
+				<td>Longitud</td>
+				<td><input type="text" ng-model="longitudMascota" />
+				</td>
+			</tr>
+		</table>
+		<br> 
+		<input type="text" ng-model="idCollar" /><input type="button" value="Registrarse"
+			ng-click="registrarse()">
+	</div>
+</body>
+</html>
